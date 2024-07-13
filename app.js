@@ -24,7 +24,7 @@ const questions = [
             "Five"
         ],
         correctAnswer: 1,
-        explanation: "In North America, there are three primary subspecies of elk: the American elk (Cervus canadensis spp.), Roosevelt's elk (Cervus canadensis roosevelti), and tule elk (Cervus canadensis nannodes)."
+        explanation: "In North America, there are three primary subspecies of elk: the American elk (Cervus canadensis spp.), Roosevelt's elk (Cervus canadensis roosevelti), and tule elk (Cervus canadensis nannodes). (How to Score North American Big Game, p. 67)"
     },
     {
         question: "Which subspecies of elk grows the largest antlers?",
@@ -35,7 +35,7 @@ const questions = [
             "Red deer"
         ],
         correctAnswer: 2,
-        explanation: "The American elk (Cervus canadensis spp.) grows the largest antlers among the subspecies of elk in North America."
+        explanation: "The American elk (Cervus canadensis spp.) grows the largest antlers among the subspecies of elk in North America. (How to Score North American Big Game, p. 67)"
     },
     {
         question: "How many normal points do mature typical American elk bulls usually have on each antler?",
@@ -46,7 +46,7 @@ const questions = [
             "Seven"
         ],
         correctAnswer: 2,
-        explanation: "Racks of mature typical American elk bulls normally have six normal points on each antler (including the main beam tip that is counted as a normal point, but not individually measured)."
+        explanation: "Racks of mature typical American elk bulls normally have six normal points on each antler (including main beam tip that is counted as a normal point, but not individually measured). (How to Score North American Big Game, p. 67)"
     },
     {
         question: "What is the most common location for an abnormal point on American elk?",
@@ -57,7 +57,7 @@ const questions = [
             "Above the G-4 point"
         ],
         correctAnswer: 3,
-        explanation: "The most common location for an abnormal point on American elk is immediately above the G-4 point."
+        explanation: "The most common location for an abnormal point on American elk is immediately above the G-4 point. (How to Score North American Big Game, p. 67)"
     },
     {
         question: "How many circumference measurements are always taken on American elk?",
@@ -68,7 +68,7 @@ const questions = [
             "Six"
         ],
         correctAnswer: 1,
-        explanation: "Four circumferences are always taken on American elk, regardless of the number of normal points."
+        explanation: "Four circumferences are always taken on American elk, regardless of the number of normal points. (How to Score North American Big Game, p. 76)"
     },
     {
         question: "Where is the H-1 circumference measurement taken on American elk?",
@@ -79,7 +79,7 @@ const questions = [
             "Between G-3 and G-4"
         ],
         correctAnswer: 1,
-        explanation: "Unlike deer categories, the H-1 circumference on American elk is taken at the smallest place between the G-1 and G-2 points."
+        explanation: "Unlike deer categories, the H-1 circumference on American elk is taken at the smallest place between the G-1 and G-2 points. (How to Score North American Big Game, p. 76)"
     },
     {
         question: "How is the greatest spread measurement best taken for American elk?",
@@ -90,7 +90,7 @@ const questions = [
             "It's not measured, only calculated"
         ],
         correctAnswer: 2,
-        explanation: "The greatest-spread measurement is best taken by laying the rack on the floor against a vertical wall, using a carpenter's level, and measuring with a folding carpenter's ruler or quarter-inch steel tape."
+        explanation: "The greatest-spread measurement is best taken by laying the rack on the floor against a vertical wall, using a carpenter's level, and measuring with a folding carpenter's ruler or quarter-inch steel tape. (How to Score North American Big Game, p. 69-70)"
     },
     {
         question: "What is the minimum score for a typical American elk to qualify for Boone and Crockett Awards?",
@@ -101,7 +101,7 @@ const questions = [
             "370"
         ],
         correctAnswer: 2,
-        explanation: "The minimum score for a typical American elk to qualify for Boone and Crockett Awards is 360."
+        explanation: "The minimum score for a typical American elk to qualify for Boone and Crockett Awards is 360. (How to Score North American Big Game, p. 77)"
     },
     {
         question: "How are unmatched points at the end of the main beam treated on American elk?",
@@ -112,7 +112,7 @@ const questions = [
             "They are not counted at all"
         ],
         correctAnswer: 1,
-        explanation: "Numerous unmatched normal points can occur at the end of a beam on American elk and are treated as normal points."
+        explanation: "Numerous unmatched normal points can occur at the end of a beam on American elk and are treated as normal points. (How to Score North American Big Game, p. 74-75)"
     },
     {
         question: "How is the inside spread credit determined for American elk?",
@@ -123,7 +123,7 @@ const questions = [
             "It's not included in the final score"
         ],
         correctAnswer: 1,
-        explanation: "The inside spread credit cannot exceed the length of the longer antler main beam. If the inside spread measurement does exceed the longer main beam, record the longer main beam length as the spread credit."
+        explanation: "The inside spread credit cannot exceed the length of the longer antler main beam. If the inside spread measurement does exceed the longer main beam, record the longer main beam length as the spread credit. (How to Score North American Big Game, p. 70)"
     },
     {
         question: "Where is the H-4 circumference taken on American elk?",
@@ -134,7 +134,7 @@ const questions = [
             "Halfway between G-4 and the beam tip"
         ],
         correctAnswer: 1,
-        explanation: "The H-4 circumference on American elk is taken at the smallest place between the G-4 and G-5 points."
+        explanation: "The H-4 circumference on American elk is taken at the smallest place between the G-4 and G-5 points. (How to Score North American Big Game, p. 76)"
     },
     {
         question: "How are circumference measurements taken when an abnormal point arises between normal points on American elk?",
@@ -145,7 +145,7 @@ const questions = [
             "At the widest point of the abnormal growth"
         ],
         correctAnswer: 1,
-        explanation: "When an abnormal point arises between normal points on American elk, the circumference measurements are taken at the narrowest location on either side of the abnormal point."
+        explanation: "When an abnormal point arises between normal points on American elk, the circumference measurements are taken at the narrowest location on either side of the abnormal point. (How to Score North American Big Game, p. 76)"
     },
     {
         question: "What is done if a G-2 point is completely missing on an American elk antler?",
@@ -156,7 +156,7 @@ const questions = [
             "The G-2 on the opposite antler is treated as an abnormal point"
         ],
         correctAnswer: 1,
-        explanation: "If a G-2 point is completely missing (didn't grow) on either or both antlers, then the H-1 and H-2 circumferences are taken at the same location, the narrowest place between the G-1 and G-3 points."
+        explanation: "If a G-2 point is completely missing (didn't grow) on either or both antlers, then the H-1 and H-2 circumferences are taken at the same location, the narrowest place between the G-1 and G-3 points. (How to Score North American Big Game, p. 76)"
     },
     {
         question: "How is the main beam length measured on American elk?",
@@ -167,7 +167,7 @@ const questions = [
             "As a straight line from burr to tip"
         ],
         correctAnswer: 1,
-        explanation: "The main beam length is measured from the point where the center line of the antler along the outer side intersects the burr, out to the beam tip. This line must stay in the middle of the beam on the outer side."
+        explanation: "The main beam length is measured from the point where the center line of the antler along the outer side intersects the burr, out to the beam tip. This line must stay in the middle of the beam on the outer side. (How to Score North American Big Game, p. 72-73)"
     },
     {
         question: "How are G-1 points (brow tines) measured on American elk?",
@@ -178,7 +178,7 @@ const questions = [
             "As a straight line from base to tip"
         ],
         correctAnswer: 2,
-        explanation: "The length of G-1 is measured from the center of the base line on the outside edge of the tine straight out until it naturally transitions to the bottom edge of the tine, then continues over the curve to the tip."
+        explanation: "The length of G-1 is measured from the center of the base line on the outside edge of the tine straight out until it naturally transitions to the bottom edge of the tine, then continues over the curve to the tip. (How to Score North American Big Game, p. 75-76)"
     },
     {
         question: "What is the minimum score for a non-typical American elk to qualify for Pope and Young?",
@@ -189,7 +189,7 @@ const questions = [
             "310"
         ],
         correctAnswer: 2,
-        explanation: "The minimum score for a non-typical American elk to qualify for Pope and Young is 300."
+        explanation: "The minimum score for a non-typical American elk to qualify for Pope and Young is 300. (How to Score North American Big Game, p. 77)"
     },
     {
         question: "How many abnormal inches are required for an American elk to be classified as non-typical in Pope and Young?",
@@ -200,7 +200,7 @@ const questions = [
             "25 inches"
         ],
         correctAnswer: 2,
-        explanation: "An American elk must have 20 abnormal inches to be classified as non-typical in Pope and Young."
+        explanation: "An American elk must have 20 abnormal inches to be classified as non-typical in Pope and Young. (How to Score North American Big Game, p. 77)"
     },
     {
         question: "How is the Final Score calculated for a typical American elk?",
@@ -211,7 +211,7 @@ const questions = [
             "Average of right and left antler scores"
         ],
         correctAnswer: 1,
-        explanation: "For a typical American elk, the Final Score is calculated by subtracting the total differences (Column 3) from the subtotal of measurements and spread credit."
+        explanation: "For a typical American elk, the Final Score is calculated by subtracting the total differences (Column 3) from the subtotal of measurements and spread credit. (How to Score North American Big Game, p. 77)"
     },
     {
         question: "What's the main difference in scoring between typical and non-typical American elk?",
@@ -222,7 +222,7 @@ const questions = [
             "There is no difference in scoring"
         ],
         correctAnswer: 2,
-        explanation: "The main difference is that for non-typical American elk, the total length of abnormal points is added to the score, while for typical elk, it's subtracted as part of the differences."
+        explanation: "The main difference is that for non-typical American elk, the total length of abnormal points is added to the score, while for typical elk, it's subtracted as part of the differences. (How to Score North American Big Game, p. 77)"
     },
     {
         question: "How should a broken normal point be recorded on an American elk score sheet?",
@@ -233,7 +233,7 @@ const questions = [
             "Record a zero and note it in the Remarks section"
         ],
         correctAnswer: 3,
-        explanation: "If a normal point is broken off, record a zero to indicate its condition and note the action in the Remarks section. This preserves the sequence and avoids any artificial penalty for non-symmetry."
+        explanation: "If a normal point is broken off, record a zero to indicate its condition and note the action in the Remarks section. This preserves the sequence and avoids any artificial penalty for non-symmetry. (How to Score North American Big Game, p. 74)"
     }
 ];
 
