@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff; /* This is the grey background */
+}
+
+#root {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white; /* This ensures the root container has a white background */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.iframe-container {
+    background-color: white; /* Ensure this container has a white background */
+    padding: 0;
+    margin: 0;
+}
+
+.quiz-container {
+    background-color: white !important;
+    padding: 0;
+    margin: 0;
+}
