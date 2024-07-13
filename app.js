@@ -16,84 +16,73 @@ const AlertDescription = ({ children }) => (
 
 const questions = [
     {
-        question: "What is the typical pattern of mature whitetail antler development?",
+        question: "How many primary subspecies of elk are there in North America?",
         choices: [
-            "A branched main beam with multiple forks",
-            "An unbranched main beam with 3-7 points arising from the top",
-            "A spiral-shaped main beam with points all around",
-            "A flat, palmate structure similar to moose antlers"
+            "Two",
+            "Three",
+            "Four",
+            "Five"
         ],
         correctAnswer: 1,
-        explanation: "The typical pattern of mature whitetail antler development is an unbranched main beam that normally develops from three to seven (or more) points arising from the top of the main beam. (How to Score North American Big Game, p. 121)"
+        explanation: "In North America, there are three primary subspecies of elk: the American elk (Cervus canadensis spp.), Roosevelt's elk (Cervus canadensis roosevelti), and tule elk (Cervus canadensis nannodes)."
     },
     {
-        question: "Which of the following is considered an abnormal point on a whitetail deer rack?",
+        question: "Which subspecies of elk grows the largest antlers?",
         choices: [
-            "A point arising from the top of the main beam",
-            "The brow tine (G-1)",
-            "A point arising from the side of the main beam",
-            "The main beam tip"
+            "Roosevelt's elk",
+            "Tule elk",
+            "American elk",
+            "Red deer"
         ],
         correctAnswer: 2,
-        explanation: "Points arising from the sides, top inside edge, or bottom of the main beam are considered abnormal points on a whitetail deer rack. (How to Score North American Big Game, p. 125)"
+        explanation: "The American elk (Cervus canadensis spp.) grows the largest antlers among the subspecies of elk in North America."
     },
     {
-        question: "How many circumference measurements are always taken on whitetail antlers?",
+        question: "How many normal points do mature typical American elk bulls usually have on each antler?",
         choices: [
-            "2",
-            "3",
-            "4",
-            "5"
+            "Four",
+            "Five",
+            "Six",
+            "Seven"
         ],
         correctAnswer: 2,
-        explanation: "Four and only four circumferences are always taken on whitetails regardless of the number of normal points. (How to Score North American Big Game, p. 129)"
+        explanation: "Racks of mature typical American elk bulls normally have six normal points on each antler (including the main beam tip that is counted as a normal point, but not individually measured)."
     },
     {
-        question: "Where is the H-1 circumference measurement taken?",
+        question: "What is the most common location for an abnormal point on American elk?",
         choices: [
-            "At the burr",
-            "At the narrowest place between the burr and the G-1",
-            "At the narrowest place between the G-1 and G-2",
-            "Halfway between the G-1 and the beam tip"
+            "Above the G-1 point",
+            "Above the G-2 point",
+            "Above the G-3 point",
+            "Above the G-4 point"
+        ],
+        correctAnswer: 3,
+        explanation: "The most common location for an abnormal point on American elk is immediately above the G-4 point."
+    },
+    {
+        question: "How many circumference measurements are always taken on American elk?",
+        choices: [
+            "Three",
+            "Four",
+            "Five",
+            "Six"
         ],
         correctAnswer: 1,
-        explanation: "The H-1 circumference is taken at the narrowest place between the burr and the G-1 (brow tine). (How to Score North American Big Game, p. 129)"
+        explanation: "Four circumferences are always taken on American elk, regardless of the number of normal points."
     },
     {
-        question: "What is the minimum score for a typical whitetail deer to qualify for Boone and Crockett Awards?",
+        question: "Where is the H-1 circumference measurement taken on American elk?",
         choices: [
-            "150",
-            "160",
-            "170",
-            "180"
+            "Between the burr and G-1",
+            "Between G-1 and G-2",
+            "Between G-2 and G-3",
+            "Between G-3 and G-4"
         ],
         correctAnswer: 1,
-        explanation: "The minimum score for a typical whitetail deer to qualify for Boone and Crockett Awards is 160. (How to Score North American Big Game, p. 131)"
+        explanation: "Unlike deer categories, the H-1 circumference on American elk is taken at the smallest place between the G-1 and G-2 points."
     },
     {
-        question: "How are unmatched points at the end of the main beam treated?",
-        choices: [
-            "Always as abnormal points",
-            "Always as normal points",
-            "As normal points only if they are the longest point",
-            "They are not counted at all"
-        ],
-        correctAnswer: 1,
-        explanation: "Extra, unpaired points at the end of the beam that project upward along the outside edge of the main beam are treated as normal points. (How to Score North American Big Game, p. 126)"
-    },
-    {
-        question: "What is a 'non-symmetry point'?",
-        choices: [
-            "A point that is longer on one side than the other",
-            "An extra unmatched point that occurs between normal points",
-            "A point that grows in an unusual direction",
-            "A point that is broken off"
-        ],
-        correctAnswer: 1,
-        explanation: "A non-symmetry point is an extra unmatched point that occurs at some position other than at the end of the beam. It is treated as an abnormal point. (How to Score North American Big Game, p. 127-128)"
-    },
-    {
-        question: "How is the greatest spread measurement taken?",
+        question: "How is the greatest spread measurement best taken for American elk?",
         choices: [
             "With a flexible tape measure",
             "By eye estimation",
@@ -101,65 +90,32 @@ const questions = [
             "It's not measured, only calculated"
         ],
         correctAnswer: 2,
-        explanation: "The greatest spread measurement is best taken by laying the rack against a vertical wall, using a carpenter's level to mark the widest point, and measuring with a ruler. (How to Score North American Big Game, p. 123-124)"
+        explanation: "The greatest-spread measurement is best taken by laying the rack on the floor against a vertical wall, using a carpenter's level, and measuring with a folding carpenter's ruler or quarter-inch steel tape."
     },
     {
-        question: "What is the minimum score for a non-typical Coues' whitetail to qualify for Pope and Young?",
+        question: "What is the minimum score for a typical American elk to qualify for Boone and Crockett Awards?",
         choices: [
-            "70",
-            "80",
-            "90",
-            "100"
+            "340",
+            "350",
+            "360",
+            "370"
+        ],
+        correctAnswer: 2,
+        explanation: "The minimum score for a typical American elk to qualify for Boone and Crockett Awards is 360."
+    },
+    {
+        question: "How are unmatched points at the end of the main beam treated on American elk?",
+        choices: [
+            "Always as abnormal points",
+            "Always as normal points",
+            "As normal points only if they are the longest point",
+            "They are not counted at all"
         ],
         correctAnswer: 1,
-        explanation: "The minimum score for a non-typical Coues' whitetail to qualify for Pope and Young is 80. (How to Score North American Big Game, p. 131)"
+        explanation: "Numerous unmatched normal points can occur at the end of a beam on American elk and are treated as normal points."
     },
     {
-        question: "How many abnormal inches are required for a whitetail to be classified as non-typical in Pope and Young?",
-        choices: [
-            "5 inches",
-            "10 inches",
-            "15 inches",
-            "20 inches"
-        ],
-        correctAnswer: 2,
-        explanation: "A whitetail must have 15 abnormal inches to be classified as non-typical in Pope and Young. (How to Score North American Big Game, p. 131)"
-    },
-    {
-        question: "Where is the H-4 circumference taken if there are fewer than four normal points?",
-        choices: [
-            "At the burr",
-            "At the beam tip",
-            "Halfway between the G-3 and the beam tip",
-            "It's not measured"
-        ],
-        correctAnswer: 2,
-        explanation: "If there are fewer than four measured normal points per antler, the H-4 circumference is taken on the main beam halfway between the center of the G-3 point base and the beam tip. (How to Score North American Big Game, p. 129-130)"
-    },
-    {
-        question: "How are circumference measurements taken when an abnormal point arises between normal points?",
-        choices: [
-            "At the abnormal point",
-            "At the narrowest location between normal points on either side of the abnormal point",
-            "They are not taken in this case",
-            "At the widest point of the abnormal growth"
-        ],
-        correctAnswer: 1,
-        explanation: "When an abnormal point arises between normal points, the circumference measurements are taken at the narrowest location between normal points on either side of the abnormal point. (How to Score North American Big Game, p. 130)"
-    },
-    {
-        question: "What is done if a G-1 point (brow tine) is missing on one antler?",
-        choices: [
-            "The rack is disqualified",
-            "The existing brow tine on the opposite antler is treated as an abnormal point",
-            "The existing brow tine is treated as normal and matched against a zero value",
-            "Both H-1 and H-2 measurements are taken at the same location"
-        ],
-        correctAnswer: 2,
-        explanation: "If a G-1 point (brow tine) is missing on one antler, treat the existing brow tine on the opposite antler as a normal point, and match it against a zero value for the missing G-1. (How to Score North American Big Game, p. 126)"
-    },
-    {
-        question: "How is the inside spread credit determined?",
+        question: "How is the inside spread credit determined for American elk?",
         choices: [
             "It's always the actual inside spread measurement",
             "It's the actual inside spread or the length of the longer main beam, whichever is less",
@@ -167,43 +123,87 @@ const questions = [
             "It's not included in the final score"
         ],
         correctAnswer: 1,
-        explanation: "The inside spread credit cannot exceed the length of the longer antler main beam. If the inside spread measurement does exceed the longer main beam, record the longer main beam length as the spread credit. (How to Score North American Big Game, p. 124-125)"
+        explanation: "The inside spread credit cannot exceed the length of the longer antler main beam. If the inside spread measurement does exceed the longer main beam, record the longer main beam length as the spread credit."
     },
     {
-        question: "What is a Coues' whitetail deer?",
+        question: "Where is the H-4 circumference taken on American elk?",
         choices: [
-            "A large subspecies found in the northern United States",
-            "A small mountain-dwelling subspecies found in the American Southwest and Mexico",
-            "A hybrid between whitetail and mule deer",
-            "An extinct subspecies of whitetail deer"
+            "Between G-3 and G-4",
+            "Between G-4 and G-5",
+            "Between G-5 and G-6",
+            "Halfway between G-4 and the beam tip"
         ],
         correctAnswer: 1,
-        explanation: "The Coues' whitetail is a small mountain-dwelling subspecies found throughout the American Southwest and Mexico. (How to Score North American Big Game, p. 121)"
+        explanation: "The H-4 circumference on American elk is taken at the smallest place between the G-4 and G-5 points."
     },
     {
-        question: "How are burr tines or 'beauty points' classified?",
+        question: "How are circumference measurements taken when an abnormal point arises between normal points on American elk?",
         choices: [
-            "As normal points",
-            "As abnormal points",
-            "They are not counted",
-            "As G-1 points"
+            "At the abnormal point",
+            "At the narrowest location on either side of the abnormal point",
+            "They are not taken in this case",
+            "At the widest point of the abnormal growth"
         ],
         correctAnswer: 1,
-        explanation: "Burr tines or beauty points (points arising from the antler burr) are classified as abnormal points. (How to Score North American Big Game, p. 125)"
+        explanation: "When an abnormal point arises between normal points on American elk, the circumference measurements are taken at the narrowest location on either side of the abnormal point."
     },
     {
-        question: "What is the correct way to measure a curved antler point?",
+        question: "What is done if a G-2 point is completely missing on an American elk antler?",
         choices: [
-            "Along the inside curve",
-            "Along the outside curve",
-            "As a straight line from base to tip",
-            "By averaging the inside and outside measurements"
+            "The rack is disqualified",
+            "The H-1 and H-2 circumferences are taken at the same location",
+            "An estimated measurement is used",
+            "The G-2 on the opposite antler is treated as an abnormal point"
         ],
         correctAnswer: 1,
-        explanation: "Antler points are measured along the outside of their curve in the center of the tine. (How to Score North American Big Game, p. 128)"
+        explanation: "If a G-2 point is completely missing (didn't grow) on either or both antlers, then the H-1 and H-2 circumferences are taken at the same location, the narrowest place between the G-1 and G-3 points."
     },
     {
-        question: "How is the Final Score calculated for a typical whitetail?",
+        question: "How is the main beam length measured on American elk?",
+        choices: [
+            "From the burr to the longest tine",
+            "From the center of the burr on the outer side to the beam tip",
+            "From the eye socket to the beam tip",
+            "As a straight line from burr to tip"
+        ],
+        correctAnswer: 1,
+        explanation: "The main beam length is measured from the point where the center line of the antler along the outer side intersects the burr, out to the beam tip. This line must stay in the middle of the beam on the outer side."
+    },
+    {
+        question: "How are G-1 points (brow tines) measured on American elk?",
+        choices: [
+            "From the top of the beam",
+            "From the bottom of the beam",
+            "From the center of the base line on the outside edge",
+            "As a straight line from base to tip"
+        ],
+        correctAnswer: 2,
+        explanation: "The length of G-1 is measured from the center of the base line on the outside edge of the tine straight out until it naturally transitions to the bottom edge of the tine, then continues over the curve to the tip."
+    },
+    {
+        question: "What is the minimum score for a non-typical American elk to qualify for Pope and Young?",
+        choices: [
+            "280",
+            "290",
+            "300",
+            "310"
+        ],
+        correctAnswer: 2,
+        explanation: "The minimum score for a non-typical American elk to qualify for Pope and Young is 300."
+    },
+    {
+        question: "How many abnormal inches are required for an American elk to be classified as non-typical in Pope and Young?",
+        choices: [
+            "10 inches",
+            "15 inches",
+            "20 inches",
+            "25 inches"
+        ],
+        correctAnswer: 2,
+        explanation: "An American elk must have 20 abnormal inches to be classified as non-typical in Pope and Young."
+    },
+    {
+        question: "How is the Final Score calculated for a typical American elk?",
         choices: [
             "Sum of all measurements",
             "Sum of measurements minus differences",
@@ -211,21 +211,21 @@ const questions = [
             "Average of right and left antler scores"
         ],
         correctAnswer: 1,
-        explanation: "For a typical whitetail, the Final Score is calculated by subtracting the total differences (Column 3) from the subtotal of measurements and spread credit. (How to Score North American Big Game, p. 130-131)"
+        explanation: "For a typical American elk, the Final Score is calculated by subtracting the total differences (Column 3) from the subtotal of measurements and spread credit."
     },
     {
-        question: "What's the difference in scoring between typical and non-typical whitetail deer?",
+        question: "What's the main difference in scoring between typical and non-typical American elk?",
         choices: [
-            "Non-typical deer have more points measured",
-            "Typical deer don't include abnormal points in the score",
-            "Non-typical deer add abnormal point lengths to the score instead of subtracting differences",
+            "Non-typical elk have more points measured",
+            "Typical elk don't include abnormal points in the score",
+            "Non-typical elk add abnormal point lengths to the score instead of subtracting differences",
             "There is no difference in scoring"
         ],
         correctAnswer: 2,
-        explanation: "The main difference is that for non-typical deer, the total length of abnormal points is added to the score, while for typical deer, it's subtracted as part of the differences. (How to Score North American Big Game, p. 130-131)"
+        explanation: "The main difference is that for non-typical American elk, the total length of abnormal points is added to the score, while for typical elk, it's subtracted as part of the differences."
     },
     {
-        question: "What should be done if a normal point is broken off to less than an inch long?",
+        question: "How should a broken normal point be recorded on an American elk score sheet?",
         choices: [
             "Estimate its original length",
             "Ignore it completely",
@@ -233,7 +233,7 @@ const questions = [
             "Record a zero and note it in the Remarks section"
         ],
         correctAnswer: 3,
-        explanation: "If a normal point has been broken off to less than an inch long, record a zero to indicate its condition and note the action in the Remarks section. This preserves the sequence and avoids any artificial penalty for non-symmetry. (How to Score North American Big Game, p. 127)"
+        explanation: "If a normal point is broken off, record a zero to indicate its condition and note the action in the Remarks section. This preserves the sequence and avoids any artificial penalty for non-symmetry."
     }
 ];
 
