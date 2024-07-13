@@ -342,3 +342,4 @@ const QuizApp = () => {
 };
 
 export default QuizApp;
+ReactDOM.render(React.createElement(QuizApp), document.getElementById('root'));
