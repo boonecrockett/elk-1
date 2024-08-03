@@ -304,7 +304,7 @@ const QuizApp = () => {
                 alt="Boone and Crockett Club Logo" 
                 className="absolute top-0 right-0 w-[75px] h-[75px]"
             />
-            <h1 className="text-2xl font-bold mb-4">Quiz 1 - American Elk Knowledge</h1>
+            <h1 className="text-2xl font-bold mb-4">American Elk Knowledge</h1>
             <p className="mb-4">Question {currentQuestion + 1} of {questions.length}</p>
             <p className="text-lg font-semibold mb-4">{currentQ.question}</p>
             <div className="space-y-2">
