@@ -293,7 +293,12 @@ const QuizApp = () => {
     const currentQ = questions[currentQuestion];
 
     return (
-        <div className="max-w-2xl mx-auto p-4">
+        <div className="max-w-2xl mx-auto p-4 relative">
+            <img 
+                src="https://aws.boone-crockett.org/s3fs-public/styles/12-col_848px/public/thumbnails/image/150_bw_logo_0.png" 
+                alt="Boone and Crockett Club Logo" 
+                className="absolute top-0 right-0 w-[75px] h-[75px]"
+            />
             <h1 className="text-2xl font-bold mb-4">Quiz 1 - Scoring American Elk</h1>
             <p className="mb-4">Question {currentQuestion + 1} of {questions.length}</p>
             <p className="text-lg font-semibold mb-4">{currentQ.question}</p>
