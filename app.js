@@ -60,7 +60,7 @@ const questions = [
         explanation: "The primary diet of American elk consists of grasses and forbs, although they also eat tree bark, leaves, and other vegetation depending on the season."
     },
     {
-        question: "During which season do male elk (bulls) grow their antlers?",
+        question: "During which season do male elk (bulls) begin to grow their antlers?",
         choices: [
             "Spring",
             "Summer",
@@ -150,13 +150,13 @@ const questions = [
     {
         question: "Which physical adaptation helps elk survive in cold climates?",
         choices: [
-            "Thick, oily fur",
+            "Thick, oily hair",
             "Ability to hibernate",
             "Color-changing coat",
             "Extra layers of fat"
         ],
         correctAnswer: 0,
-        explanation: "Elk have thick, oily fur that helps insulate them against cold temperatures and repel moisture."
+        explanation: "Elk have thick, oily hair that helps insulate them against cold temperatures and repel moisture."
     },
     {
         question: "What is the term for a male elk that has not yet reached breeding age?",
