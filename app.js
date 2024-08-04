@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+const { useState } = React;
 
 const Alert = ({ children, className }) => (
     <div className={`bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 ${className}`} role="alert">
@@ -17,121 +17,221 @@ const AlertDescription = ({ children }) => (
 const questions = [
     {
         question: "How many primary subspecies of elk are there in North America?",
-        choices: ["Two", "Three", "Four", "Five"],
+        choices: [
+            "Two",
+            "Three",
+            "Four",
+            "Five"
+        ],
         correctAnswer: 1,
         explanation: "In North America, there are three primary subspecies of elk: the American elk (Cervus canadensis spp.), Roosevelt's elk (Cervus canadensis roosevelti), and tule elk (Cervus canadensis nannodes)."
     },
     {
         question: "Which subspecies of elk is the largest-bodied?",
-        choices: ["American elk", "Roosevelt's elk", "Tule elk", "Manitoba elk"],
+        choices: [
+            "American elk",
+            "Roosevelt's elk",
+            "Tule elk",
+            "Manitoba elk"
+        ],
         correctAnswer: 1,
         explanation: "Roosevelt's elk (Cervus canadensis roosevelti) of the coastal areas of the northwest are the largest-bodied elk subspecies."
     },
     {
         question: "What is the scientific name for the American elk?",
-        choices: ["Cervus elaphus", "Cervus canadensis", "Alces alces", "Rangifer tarandus"],
+        choices: [
+            "Cervus elaphus",
+            "Cervus canadensis",
+            "Alces alces",
+            "Rangifer tarandus"
+        ],
         correctAnswer: 1,
         explanation: "The scientific name for the American elk is Cervus canadensis."
     },
     {
         question: "What is the primary diet of American elk?",
-        choices: ["Grasses and forbs", "Tree bark and leaves", "Small mammals", "Fish"],
+        choices: [
+            "Grasses and forbs",
+            "Tree bark and leaves",
+            "Small mammals",
+            "Fish"
+        ],
         correctAnswer: 0,
         explanation: "The primary diet of American elk consists of grasses and forbs, although they also eat tree bark, leaves, and other vegetation depending on the season."
     },
     {
         question: "During which season do male elk (bulls) grow their antlers?",
-        choices: ["Spring", "Summer", "Fall", "Winter"],
+        choices: [
+            "Spring",
+            "Summer",
+            "Fall",
+            "Winter"
+        ],
         correctAnswer: 0,
         explanation: "Male elk grow their antlers during the spring and summer months."
     },
     {
         question: "What is the term for the vocalization male elk make during the mating season?",
-        choices: ["Roar", "Bugle", "Bellow", "Grunt"],
+        choices: [
+            "Roar",
+            "Bugle",
+            "Bellow",
+            "Grunt"
+        ],
         correctAnswer: 1,
         explanation: "The vocalization male elk make during the mating season is called a bugle."
     },
     {
         question: "What is the average gestation period for an American elk cow?",
-        choices: ["5-6 months", "7-8 months", "9-10 months", "11-12 months"],
+        choices: [
+            "5-6 months",
+            "7-8 months",
+            "9-10 months",
+            "11-12 months"
+        ],
         correctAnswer: 1,
         explanation: "The average gestation period for an American elk cow is about 7-8 months."
     },
     {
         question: "Which of the following is a major predator of American elk?",
-        choices: ["Bald eagle", "Black bear", "Mountain lion", "Coyote"],
+        choices: [
+            "Bald eagle",
+            "Black bear",
+            "Mountain lion",
+            "Coyote"
+        ],
         correctAnswer: 2,
         explanation: "Mountain lions are major predators of American elk, especially calves and weaker adults."
     },
     {
         question: "In which habitat type are American elk typically NOT found?",
-        choices: ["Alpine meadows", "Coniferous forests", "Grasslands", "Desert scrublands"],
+        choices: [
+            "Alpine meadows",
+            "Coniferous forests",
+            "Grasslands",
+            "Desert scrublands"
+        ],
         correctAnswer: 3,
         explanation: "American elk are typically not found in desert scrublands. They prefer habitats such as alpine meadows, coniferous forests, and grasslands."
     },
     {
         question: "What is the average weight of an adult male American elk?",
-        choices: ["300-500 pounds", "500-700 pounds", "700-900 pounds", "900-1100 pounds"],
+        choices: [
+            "300-500 pounds",
+            "500-700 pounds",
+            "700-900 pounds",
+            "900-1100 pounds"
+        ],
         correctAnswer: 1,
         explanation: "The average weight of an adult male American elk (bull) is typically between 500-700 pounds."
     },
     {
         question: "What term is used for a group of elk?",
-        choices: ["Herd", "Pack", "Flock", "Pod"],
+        choices: [
+            "Herd",
+            "Pack",
+            "Flock",
+            "Pod"
+        ],
         correctAnswer: 0,
         explanation: "A group of elk is called a herd."
     },
     {
         question: "What is the primary reason elk migrate seasonally in some regions?",
-        choices: ["To avoid predators", "To find better food sources", "To seek warmer temperatures", "To find mates"],
+        choices: [
+            "To avoid predators",
+            "To find better food sources",
+            "To seek warmer temperatures",
+            "To find mates"
+        ],
         correctAnswer: 1,
         explanation: "The primary reason for seasonal elk migration is to find better food sources."
     },
     {
         question: "Which physical adaptation helps elk survive in cold climates?",
-        choices: ["Thick, oily fur", "Ability to hibernate", "Color-changing coat", "Extra layers of fat"],
+        choices: [
+            "Thick, oily fur",
+            "Ability to hibernate",
+            "Color-changing coat",
+            "Extra layers of fat"
+        ],
         correctAnswer: 0,
         explanation: "Elk have thick, oily fur that helps insulate them against cold temperatures and repel moisture."
     },
     {
         question: "What is the term for a male elk that has not yet reached breeding age?",
-        choices: ["Calf", "Yearling", "Spike", "Buck"],
+        choices: [
+            "Calf",
+            "Yearling",
+            "Spike",
+            "Buck"
+        ],
         correctAnswer: 2,
         explanation: "A young male elk that has not yet reached breeding age is often called a spike."
     },
     {
         question: "Which U.S. national park is famous for its large elk population?",
-        choices: ["Yellowstone National Park", "Yosemite National Park", "Grand Canyon National Park", "Great Smoky Mountains National Park"],
+        choices: [
+            "Yellowstone National Park",
+            "Yosemite National Park",
+            "Grand Canyon National Park",
+            "Great Smoky Mountains National Park"
+        ],
         correctAnswer: 0,
         explanation: "Yellowstone National Park is famous for its large elk population."
     },
     {
         question: "What is the primary threat to elk populations in many areas today?",
-        choices: ["Climate change", "Habitat fragmentation", "Overhunting", "Disease"],
+        choices: [
+            "Climate change",
+            "Habitat fragmentation",
+            "Overhunting",
+            "Disease"
+        ],
         correctAnswer: 1,
         explanation: "Habitat fragmentation due to human development and land use changes is a primary threat to elk populations in many areas today."
     },
     {
         question: "Which of these is NOT a typical behavior of bull elk during the rutting season?",
-        choices: ["Bugling", "Fighting other males", "Wallowing in mud", "Hibernating"],
+        choices: [
+            "Bugling",
+            "Fighting other males",
+            "Wallowing in mud",
+            "Hibernating"
+        ],
         correctAnswer: 3,
         explanation: "Hibernating is not a typical behavior of bull elk during the rutting season."
     },
     {
         question: "What conservation effort has been crucial in restoring elk populations in some areas?",
-        choices: ["Captive breeding programs", "Reintroduction to historical ranges", "Genetic modification", "Eliminating all predators"],
+        choices: [
+            "Captive breeding programs",
+            "Reintroduction to historical ranges",
+            "Genetic modification",
+            "Eliminating all predators"
+        ],
         correctAnswer: 1,
         explanation: "Reintroduction of elk to their historical ranges has been a crucial conservation effort in restoring elk populations in some areas."
     },
     {
         question: "What is the average lifespan of an American elk in the wild?",
-        choices: ["5-10 years", "10-15 years", "15-20 years", "20-25 years"],
+        choices: [
+            "5-10 years",
+            "10-15 years",
+            "15-20 years",
+            "20-25 years"
+        ],
         correctAnswer: 1,
         explanation: "The average lifespan of an American elk in the wild is typically 10-15 years."
     },
     {
         question: "Which Native American tribe has a particularly strong cultural association with elk?",
-        choices: ["Navajo", "Sioux", "Cherokee", "Nez Perce"],
+        choices: [
+            "Navajo",
+            "Sioux",
+            "Cherokee",
+            "Nez Perce"
+        ],
         correctAnswer: 3,
         explanation: "The Nez Perce tribe has a particularly strong cultural association with elk."
     }
@@ -144,13 +244,6 @@ const QuizApp = () => {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [quizComplete, setQuizComplete] = useState(false);
     const [isCorrect, setIsCorrect] = useState(null);
-    const [pageViews, setPageViews] = useState(0);
-    const [totalScore, setTotalScore] = useState(0);
-    const [quizAttempts, setQuizAttempts] = useState(0);
-
-    useEffect(() => {
-        setPageViews(prevViews => prevViews + 1);
-    }, []);
 
     const handleAnswer = (choiceIndex) => {
         setSelectedAnswer(choiceIndex);
@@ -158,7 +251,7 @@ const QuizApp = () => {
         const correct = choiceIndex === questions[currentQuestion].correctAnswer;
         setIsCorrect(correct);
         if (correct) {
-            setScore(prevScore => prevScore + 1);
+            setScore((prevScore) => prevScore + 1);
         }
     };
 
@@ -167,15 +260,13 @@ const QuizApp = () => {
         setSelectedAnswer(null);
         setIsCorrect(null);
         if (currentQuestion < questions.length - 1) {
-            setCurrentQuestion(prevQuestion => prevQuestion + 1);
+            setCurrentQuestion((prevQuestion) => prevQuestion + 1);
         } else {
             setQuizComplete(true);
-            setTotalScore(prevTotal => prevTotal + score);
-            setQuizAttempts(prevAttempts => prevAttempts + 1);
         }
     };
 
-    const restartQuiz = () => {
+    const resetQuiz = () => {
         setCurrentQuestion(0);
         setScore(0);
         setShowExplanation(false);
@@ -183,14 +274,6 @@ const QuizApp = () => {
         setQuizComplete(false);
         setIsCorrect(null);
     };
-
-    const averageScore = quizAttempts > 0 ? (totalScore / quizAttempts).toFixed(2) : 0;
-
-    const PageCounter = () => (
-        <div className="absolute bottom-0 right-0 p-2">
-            <p className="text-xs text-gray-500">{pageViews}</p>
-        </div>
-    );
 
     if (quizComplete) {
         return (
@@ -200,19 +283,14 @@ const QuizApp = () => {
                     alt="Boone and Crockett Club Logo" 
                     className="absolute top-0 right-0 w-[75px] h-[75px]"
                 />
-                <div className="absolute top-0 left-0 p-2 bg-gray-100 rounded">
-                    <p className="text-sm">Avg. Score: {averageScore}</p>
-                </div>
                 <h1 className="text-2xl font-bold mb-4">Quiz Complete!</h1>
                 <p className="text-xl mb-4">Your final score: {score} out of {questions.length}</p>
-                <p className="text-lg mb-4">Total quiz attempts: {quizAttempts}</p>
                 <button
-                    onClick={restartQuiz}
+                    onClick={resetQuiz}
                     className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
                 >
-                    Take Quiz Again
+                    Restart Quiz
                 </button>
-                <PageCounter />
             </div>
         );
     }
@@ -226,11 +304,8 @@ const QuizApp = () => {
                 alt="Boone and Crockett Club Logo" 
                 className="absolute top-0 right-0 w-[75px] h-[75px]"
             />
-            <div className="absolute top-0 left-0 p-2 bg-gray-100 rounded">
-                <p className="text-sm">Avg. Score: {averageScore}</p>
-            </div>
-            <h1 className="text-2xl font-bold mb-4 mt-8">American Elk Knowledge Quiz</h1>
-            <p className="mb-2">Question {currentQuestion + 1} of {questions.length}</p>
+            <h1 className="text-2xl font-bold mb-4">American Elk Knowledge Quiz</h1>
+            <p className="mb-4">Question {currentQuestion + 1} of {questions.length}</p>
             <p className="text-lg font-semibold mb-4">{currentQ.question}</p>
             <div className="space-y-2">
                 {currentQ.choices.map((choice, index) => (
@@ -272,9 +347,8 @@ const QuizApp = () => {
                 </button>
             )}
             <p className="mt-4">Current Score: {score} / {currentQuestion + 1}</p>
-            <PageCounter />
         </div>
     );
 };
 
-export default QuizApp;
+ReactDOM.render(<QuizApp />, document.getElementById('root'));
