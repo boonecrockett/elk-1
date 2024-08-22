@@ -2,20 +2,20 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #ffffff; /* This is the grey background */
+    background-color: #ffffff;
 }
 
 #root {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: white; /* This ensures the root container has a white background */
+    background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 8px;
 }
 
 .iframe-container {
-    background-color: white; /* Ensure this container has a white background */
+    background-color: white;
     padding: 0;
     margin: 0;
 }
@@ -24,4 +24,100 @@ body {
     background-color: white !important;
     padding: 0;
     margin: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.choice-button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.choice-button:hover {
+    background-color: #e8e8e8;
+}
+
+.choice-button.correct {
+    background-color: #d4edda;
+}
+
+.choice-button.incorrect {
+    background-color: #f8d7da;
+}
+
+.choice-button.disabled {
+    cursor: not-allowed;
+}
+
+.feedback {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.feedback.correct {
+    color: green;
+}
+
+.feedback.incorrect {
+    color: red;
+}
+
+.alert {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.alert-title {
+    font-weight: bold;
+}
+
+.next-button, .restart-button, .buy-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.next-button:hover, .restart-button:hover, .buy-button:hover {
+    background-color: #0056b3;
+}
+
+.product-image {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.coupon-code {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.score {
+    margin-top: 10px;
+    font-weight: bold;
 }
