@@ -1,18 +1,5 @@
-const { useState } = React;
-
-const Alert = ({ children, className }) => (
-    <div className={`bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 ${className}`} role="alert">
-        {children}
-    </div>
-);
-
-const AlertTitle = ({ children }) => (
-    <h3 className="font-bold">{children}</h3>
-);
-
-const AlertDescription = ({ children }) => (
-    <p>{children}</p>
-);
+import React, { useState } from 'react';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 const questions = [
     {
         question: "How many primary subspecies of elk are there in North America?",
