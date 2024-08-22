@@ -285,39 +285,12 @@ const QuizApp = () => {
                 />
                 <h1 className="text-2xl font-bold mb-4">Quiz Complete!</h1>
                 <p className="text-xl mb-4">Your final score: {score} out of {questions.length}</p>
-                <a 
-                    href="https://www.boone-crockett.org/american-elk-retrospective" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="block w-1/2 mx-auto mb-4 hover:opacity-80 transition-opacity"
+                <button
+                    onClick={resetQuiz}
+                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
                 >
-                    <img 
-                        src="https://aws.boone-crockett.org/s3fs-public/styles/featured_product/public/thumbnails/image/bpaer_0.jpg?itok=OXajVOEH" 
-                        alt="An American Elk Retrospective" 
-                        className="w-full"
-                    />
-                </a>
-                <p className="mb-4">Thank you for taking our elk quiz!<br> 
-                <br>Use this discount code to get $10 off on our best-selling book <b>An American Elk Retrospective</b>.</p>
-                <div className="bg-gray-100 p-4 mb-4 text-center">
-                    <p className="font-bold text-lg">Coupon Code: ELKQUIZ</p>
-                </div>
-                <div className="flex justify-center space-x-4">
-                    <button
-                        onClick={resetQuiz}
-                        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-                    >
-                        Restart Quiz
-                    </button>
-                    <a 
-                        href="https://www.boone-crockett.org/american-elk-retrospective" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
-                    >
-                        BUY NOW!
-                    </a>
-                </div>
+                    Restart Quiz
+                </button>
             </div>
         );
     }
