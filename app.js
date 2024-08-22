@@ -13,7 +13,6 @@ const AlertTitle = ({ children }) => (
 const AlertDescription = ({ children }) => (
     <p className="alert-description">{children}</p>
 );
-
 const questions = [
     {
         question: "How many primary subspecies of elk are there in North America?",
@@ -138,12 +137,12 @@ const questions = [
 ];
 
 const QuizApp = () => {
-    const [currentQuestion, setCurrentQuestion] = useState(0);
-    const [score, setScore] = useState(0);
-    const [showExplanation, setShowExplanation] = useState(false);
-    const [selectedAnswer, setSelectedAnswer] = useState(null);
-    const [quizComplete, setQuizComplete] = useState(false);
-    const [isCorrect, setIsCorrect] = useState(null);
+    const [currentQuestion, setCurrentQuestion] = React.useState(0);
+    const [score, setScore] = React.useState(0);
+    const [showExplanation, setShowExplanation] = React.useState(false);
+    const [selectedAnswer, setSelectedAnswer] = React.useState(null);
+    const [quizComplete, setQuizComplete] = React.useState(false);
+    const [isCorrect, setIsCorrect] = React.useState(null);
 
     const handleAnswer = (choiceIndex) => {
         setSelectedAnswer(choiceIndex);
@@ -270,4 +269,4 @@ const QuizApp = () => {
     );
 };
 
-export default QuizApp;
+ReactDOM.render(<QuizApp />, document.getElementById('root'));
