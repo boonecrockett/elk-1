@@ -1,5 +1,18 @@
-import React, { useState } from 'react';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+const { useState } = React;
+
+const Alert = ({ children, className }) => (
+    <div className={`bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 ${className}`} role="alert">
+        {children}
+    </div>
+);
+
+const AlertTitle = ({ children }) => (
+    <h3 className="font-bold">{children}</h3>
+);
+
+const AlertDescription = ({ children }) => (
+    <p>{children}</p>
+);
 const questions = [
     {
         question: "How many primary subspecies of elk are there in North America?",
@@ -265,22 +278,27 @@ const QuizApp = () => {
         return (
             <div className="max-w-2xl mx-auto p-4 relative">
                 <img 
-                    src="/api/placeholder/75/75"
+                    src="https://aws.boone-crockett.org/s3fs-public/styles/12-col_848px/public/thumbnails/image/150_bw_logo_0.png" 
                     alt="Boone and Crockett Club Logo" 
                     className="absolute top-0 right-0 w-[75px] h-[75px]"
                 />
                 <h1 className="text-2xl font-bold mb-6">Quiz Complete!</h1>
                 <p className="text-xl mb-6">Your final score: {score} out of {questions.length}</p>
-                <div className="w-1/2 mx-auto mb-6 hover:opacity-80 transition-opacity">
+                <a 
+                    href="https://www.boone-crockett.org/american-elk-retrospective" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block w-1/2 mx-auto mb-6 hover:opacity-80 transition-opacity"
+                >
                     <img 
-                        src="/api/placeholder/400/300"
+                        src="https://aws.boone-crockett.org/s3fs-public/styles/featured_product/public/thumbnails/image/bpaer_0.jpg?itok=OXajVOEH" 
                         alt="An American Elk Retrospective" 
                         className="w-full"
                     />
-                </div>
+                </a>
                 <p className="mb-6 text-center">
-                    As a thank you for taking our elk quiz...<br /><br />
-                    Use this discount code to get <b>$10 off</b> on our best-selling book<br /> <b>An American Elk Retrospective</b>.
+                    As a thank you for taking our elk quiz...<br />
+                    Use this discount code to get <b>$10 off<b> on our best-selling book<br /> <b>An American Elk Retrospective</b>.
                 </p>
                 <div className="bg-yellow-100 p-6 mb-6 text-center rounded-lg shadow-md">
                     <p className="font-bold text-xl text-yellow-800">Coupon Code: ELKQUIZ</p>
@@ -292,11 +310,14 @@ const QuizApp = () => {
                     >
                         Restart Quiz
                     </button>
-                    <button 
+                    <a 
+                        href="https://www.boone-crockett.org/american-elk-retrospective" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
                         className="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600 transition-colors"
                     >
                         BUY NOW!
-                    </button>
+                    </a>
                 </div>
             </div>
         );
@@ -307,7 +328,7 @@ const QuizApp = () => {
     return (
         <div className="max-w-2xl mx-auto p-4 relative">
             <img 
-                src="/api/placeholder/75/75"
+                src="https://aws.boone-crockett.org/s3fs-public/styles/12-col_848px/public/thumbnails/image/150_bw_logo_0.png" 
                 alt="Boone and Crockett Club Logo" 
                 className="absolute top-0 right-0 w-[75px] h-[75px]"
             />
@@ -358,4 +379,4 @@ const QuizApp = () => {
     );
 };
 
-export default QuizApp;
+ReactDOM.render(<QuizApp />, document.getElementById('root'));
