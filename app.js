@@ -278,27 +278,22 @@ const QuizApp = () => {
         return (
             <div className="max-w-2xl mx-auto p-4 relative">
                 <img 
-                    src="https://aws.boone-crockett.org/s3fs-public/styles/12-col_848px/public/thumbnails/image/150_bw_logo_0.png" 
+                    src="/api/placeholder/75/75"
                     alt="Boone and Crockett Club Logo" 
                     className="absolute top-0 right-0 w-[75px] h-[75px]"
                 />
                 <h1 className="text-2xl font-bold mb-6">Quiz Complete!</h1>
                 <p className="text-xl mb-6">Your final score: {score} out of {questions.length}</p>
-                <a 
-                    href="https://www.boone-crockett.org/american-elk-retrospective" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="block w-1/2 mx-auto mb-6 hover:opacity-80 transition-opacity"
-                >
+                <div className="w-1/2 mx-auto mb-6 hover:opacity-80 transition-opacity">
                     <img 
-                        src="https://aws.boone-crockett.org/s3fs-public/styles/featured_product/public/thumbnails/image/bpaer_0.jpg?itok=OXajVOEH" 
+                        src="/api/placeholder/400/300"
                         alt="An American Elk Retrospective" 
                         className="w-full"
                     />
-                </a>
+                </div>
                 <p className="mb-6 text-center">
                     As a thank you for taking our elk quiz...<br /><br />
-                    Use this discount code to get <b>$10 off<b> on our best-selling book<br> <b>An American Elk Retrospective</b>.
+                    Use this discount code to get <b>$10 off</b> on our best-selling book<br /> <b>An American Elk Retrospective</b>.
                 </p>
                 <div className="bg-yellow-100 p-6 mb-6 text-center rounded-lg shadow-md">
                     <p className="font-bold text-xl text-yellow-800">Coupon Code: ELKQUIZ</p>
@@ -310,14 +305,11 @@ const QuizApp = () => {
                     >
                         Restart Quiz
                     </button>
-                    <a 
-                        href="https://www.boone-crockett.org/american-elk-retrospective" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
+                    <button 
                         className="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600 transition-colors"
                     >
                         BUY NOW!
-                    </a>
+                    </button>
                 </div>
             </div>
         );
@@ -328,7 +320,7 @@ const QuizApp = () => {
     return (
         <div className="max-w-2xl mx-auto p-4 relative">
             <img 
-                src="https://aws.boone-crockett.org/s3fs-public/styles/12-col_848px/public/thumbnails/image/150_bw_logo_0.png" 
+                src="/api/placeholder/75/75"
                 alt="Boone and Crockett Club Logo" 
                 className="absolute top-0 right-0 w-[75px] h-[75px]"
             />
@@ -379,4 +371,4 @@ const QuizApp = () => {
     );
 };
 
-ReactDOM.render(<QuizApp />, document.getElementById('root'));
+export default QuizApp;
