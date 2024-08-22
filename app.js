@@ -1,4 +1,4 @@
-const { useState } = React;
+import React, { useState } from 'react';
 
 const Alert = ({ children, className }) => (
     <div className={`bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 ${className}`} role="alert">
@@ -285,9 +285,31 @@ const QuizApp = () => {
                 />
                 <h1 className="text-2xl font-bold mb-4">Quiz Complete!</h1>
                 <p className="text-xl mb-4">Your final score: {score} out of {questions.length}</p>
+                
+                <img 
+                    src="https://aws.boone-crockett.org/s3fs-public/styles/featured_product/public/thumbnails/image/bpaer_0.jpg?itok=OXajVOEH" 
+                    alt="An American Elk Retrospective Book" 
+                    className="w-full mb-4 rounded-lg"
+                />
+                
+                <p className="mb-4">Thank you for taking our elk quiz! Use this discount code to get $10 off on our best-selling book An American Elk Retrospective.</p>
+                
+                <div className="bg-gray-100 p-4 rounded-lg mb-4">
+                    <p className="text-lg font-bold">Coupon Code: ELKQUIZ</p>
+                </div>
+                
+                <a 
+                    href="https://www.boone-crockett.org/american-elk-retrospective" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-block bg-green-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-600 transition-colors"
+                >
+                    BUY NOW!
+                </a>
+                
                 <button
                     onClick={resetQuiz}
-                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                    className="block w-full mt-6 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
                 >
                     Restart Quiz
                 </button>
@@ -351,4 +373,4 @@ const QuizApp = () => {
     );
 };
 
-ReactDOM.render(<QuizApp />, document.getElementById('root'));
+export default QuizApp;
