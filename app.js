@@ -288,11 +288,11 @@ const QuizApp = () => {
                 <img 
                     src="https://aws.boone-crockett.org/s3fs-public/styles/featured_product/public/thumbnails/image/bpaer_0.jpg?itok=OXajVOEH" 
                     alt="An American Elk Retrospective" 
-                    className="w-full max-w-md mx-auto mb-4"
+                    className="w-1/2 max-w-md mx-auto mb-4"
                 />
-                <p className="mb-4">Thank you for taking our elk quiz! Use this discount code to get $10 off on our best-selling book An American Elk Retrospective.</p>
+                <p className="mb-4">Thank you for taking our elk quiz! Use this discount code to get $10 off on our best-selling book <b>An American Elk Retrospective</b>.</p>
                 <div className="bg-gray-100 p-4 mb-4 text-center">
-                    <p className="font-bold text-lg">Coupon Code: ELKQUIZ</p>
+                    <p className="font-bold text-lg">Coupon Code: <b>ELKQUIZ</b></p>
                 </div>
                 <div className="flex justify-center space-x-4">
                     <button
