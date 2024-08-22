@@ -297,8 +297,8 @@ const QuizApp = () => {
                     />
                 </a>
                 <p className="mb-6 text-center">
-                    Thank you for taking our elk quiz!<br /><br />
-                    Use this discount code to get $10 off on our best-selling book <b>An American Elk Retrospective</b>.
+                    As a thank you for taking our elk quiz...<br /><br />
+                    Use this discount code to get <b>$10 off<b> on our best-selling book<br> <b>An American Elk Retrospective</b>.
                 </p>
                 <div className="bg-yellow-100 p-6 mb-6 text-center rounded-lg shadow-md">
                     <p className="font-bold text-xl text-yellow-800">Coupon Code: ELKQUIZ</p>
