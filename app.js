@@ -13,7 +13,6 @@ const AlertTitle = ({ children }) => (
 const AlertDescription = ({ children }) => (
     <p>{children}</p>
 );
-
 const questions = [
     {
         question: "How many primary subspecies of elk are there in North America?",
@@ -283,13 +282,13 @@ const QuizApp = () => {
                     alt="Boone and Crockett Club Logo" 
                     className="absolute top-0 right-0 w-[75px] h-[75px]"
                 />
-                <h1 className="text-2xl font-bold mb-4">Quiz Complete!</h1>
-                <p className="text-xl mb-4">Your final score: {score} out of {questions.length}</p>
+                <h1 className="text-2xl font-bold mb-6">Quiz Complete!</h1>
+                <p className="text-xl mb-6">Your final score: {score} out of {questions.length}</p>
                 <a 
                     href="https://www.boone-crockett.org/american-elk-retrospective" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="block w-1/2 mx-auto mb-4 hover:opacity-80 transition-opacity"
+                    className="block w-1/2 mx-auto mb-6 hover:opacity-80 transition-opacity"
                 >
                     <img 
                         src="https://aws.boone-crockett.org/s3fs-public/styles/featured_product/public/thumbnails/image/bpaer_0.jpg?itok=OXajVOEH" 
@@ -297,15 +296,17 @@ const QuizApp = () => {
                         className="w-full"
                     />
                 </a>
-                <p className="mb-4">Thank you for taking our elk quiz!<br> 
-                <br>Use this discount code to get $10 off on our best-selling book <b>An American Elk Retrospective</b>.</p>
-                <div className="bg-gray-100 p-4 mb-4 text-center">
-                    <p className="font-bold text-lg">Coupon Code: ELKQUIZ</p>
+                <p className="mb-6 text-center">
+                    Thank you for taking our elk quiz!<br /><br />
+                    Use this discount code to get $10 off on our best-selling book <b>An American Elk Retrospective</b>.
+                </p>
+                <div className="bg-yellow-100 p-6 mb-6 text-center rounded-lg shadow-md">
+                    <p className="font-bold text-xl text-yellow-800">Coupon Code: ELKQUIZ</p>
                 </div>
                 <div className="flex justify-center space-x-4">
                     <button
                         onClick={resetQuiz}
-                        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                        className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-colors"
                     >
                         Restart Quiz
                     </button>
@@ -313,7 +314,7 @@ const QuizApp = () => {
                         href="https://www.boone-crockett.org/american-elk-retrospective" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+                        className="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600 transition-colors"
                     >
                         BUY NOW!
                     </a>
